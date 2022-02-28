@@ -1,0 +1,27 @@
+:root {
+  --laranja-hcode: #ff760c;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #0000FF;
+}
+body header {
+  display: flex;
+  align-items: center;
+  background-color: #ff760c;
+  height: 100px;
+}
+body header h1 {
+  margin: 0;
+}
+body header h2 {
+  background-color: #fff;
+  padding: 20px;
+  color: #ff0000;
+}
+body section {
+  background-color: rgba(255, 118, 12, 0.33);
+  height: calc(100vh - 200px);
+}
