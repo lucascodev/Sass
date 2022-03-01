@@ -1,6 +1,7 @@
-@use "_hcode.scss" with(
-    $color-primary: rgb(214, 152, 18)
-);
+@use "_hcode.scss"with($color-primary: rgb(214, 152, 18));
+
+@use "mycolor";
+
 * {
     box-sizing: border-box;
 }
@@ -35,9 +36,9 @@ body {
         }
 
         .message {
-            
+
             flex: 1;
-            background-color: $background-color;
+            background-color: mycolor.invert(hcode.$color-primary);
             padding: 16px;
             @include hcode.cantos-arredondado;
             border-bottom-left-radius: 0;
@@ -73,19 +74,23 @@ body {
                 }
             }
         }
+
         &.me {
             $background-color: hcode.$color-primary;
             flex-direction: row-reverse;
             color: #fff;
+
             .message {
                 background-color: $background-color;
                 border-bottom-left-radius: hcode.$cantos-raio;
                 border-bottom-right-radius: 0;
+
                 ::selection {
                     background: #fff;
                     color: hcode.$color-primary;
                 }
             }
+
             strong {
                 display: none;
             }

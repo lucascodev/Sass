@@ -30,7 +30,7 @@ body {
 }
 #chat > li .message {
   flex: 1;
-  background-color: #f5f6fa;
+  background-color: #1250d6;
   padding: 16px;
   border-radius: 10px;
   border-bottom-left-radius: 0;
